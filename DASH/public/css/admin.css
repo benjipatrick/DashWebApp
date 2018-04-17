@@ -1,0 +1,143 @@
+body {
+	background-color: #D0D0D0;
+	margin: 0px;
+}
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(24, 1fr);
+	grid-auto-rows: minmax(50px, auto);
+}
+
+nav {
+	background-color: #6F4A86;
+	grid-column: 1/25;
+	grid-row: 1;
+}
+
+.addStaff {
+	grid-row: 3;
+	grid-column: 11 / 15;
+	text-align: center;
+}
+
+
+.addStaff .btn-default {
+	font-size: 25px;
+	background: none;
+	border: 2px solid white;
+	color: white;
+}
+
+.addStaff .btn-default:hover {
+	background: #BFBFBF;
+	/*background: #BFBFBF !important;*/
+}
+
+.addStaff .btn-default:active, .addStaff .btn-default:focus, .createAccount .submitbutton:active, .createAccount .submitbutton:focus {
+	outline: none !important;
+  	box-shadow: none !important;
+}
+
+.buttonSelected {
+	background: #16B1C3;
+}
+
+
+.grid-item {
+	grid-row: 5;
+	grid-column: 7/19;
+}
+
+.createAccount {
+	display: grid;
+	grid-template-columns: repeat(24, 1fr);
+	grid-auto-rows: minmax(30px, auto);
+	text-align: center;
+	background: white;
+	margin: 0 auto;
+	max-width: 900px;
+	padding-bottom: 30px;
+}
+
+.createAccount .username_input {
+	grid-row: 2;
+	grid-column: 7/19;
+}
+
+
+.createAccount .password_input {
+	grid-row: 4;
+	grid-column: 7/19;
+
+	
+}
+
+.createAccount .privilege_label {
+        grid-row: 6;
+        grid-column: 8/20;
+        front-size: 1px;
+        text-align: left;
+}
+.createAccount .privilege_input {
+       grid-row: 6;
+       grid-column: 7/8;
+      
+       }
+
+
+
+  	
+.createAccount .submitbutton {
+	min-width: 25px;
+	grid-row: 7;
+	grid-column: 11/15;
+}
+
+.createAccount .btn-primary {
+	background: #16B1C3;
+	border: none;
+}
+
+.createAccount .btn-primary:hover {
+	background: #19C9DE;
+}
+
+.createAccount .btn-primary:active {
+	background: #10828F;
+}
+
+.listAllStaff {
+       grid-row: 7;
+       grid-column: 7/19;
+}
+
+.listAllStaff .panal-title {
+        text-align: center;
+}
+
+.delete-staff, .edit-staff {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	background-color: rgb(191,191,191);
+}
+
+.fa-trash-o, .fa-pencil-square-o  {
+    -webkit-transition: color 0.3s;
+    -moz-transition:    color 0.3s;
+    -ms-transition:     color 0.3s;
+    -o-transition:      color 0.3s;
+    transition:         color 0.3s;
+
+	font-size:24px;
+	color:white;
+}
+
+.fa-trash-o:hover {
+	color: #FD6059;
+}
+
+
+.fa-pencil-square-o:hover {
+	color: rgb(22, 177, 195);
+}
